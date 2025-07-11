@@ -1,3 +1,5 @@
+<img src="./assets/banner.png" alt="Banner">
+
 # NLW Agents Web - Q&A Platform
 
 Uma plataforma de perguntas e respostas com IA, onde usuários podem criar salas e fazer perguntas para receber respostas inteligentes.
@@ -92,18 +94,17 @@ npm run preview  # Preview do build de produção
 O projeto espera uma API REST rodando em `http://localhost:3333` com os seguintes endpoints:
 
 - `GET /rooms` - Lista salas
-- `POST /rooms` - Cria nova sala
-- `GET /rooms/:id/questions` - Lista perguntas da sala
-- `POST /rooms/:id/questions` - Cria nova pergunta
+- `POST /rooms` - Cria sala
+- `GET /rooms/:id/questions` - Lista perguntas
+- `POST /rooms/:id/questions` - Cria pergunta
+- `POST /rooms/:id/audio` - Upload áudio
 
-Você pode encontrar a API REST desenvolvida para essa plataforma <a href="https://github.com/SGSchneider/NLW-Agents-Server">**neste repositório**</a>!
+> **Backend**: [NLW-Agents-Server](https://github.com/SGSchneider/NLW-Agents-Server)
 
+## 🎨 Recursos
 
-## 🎨 Design System
-
-Os componentes seguem o padrão do **shadcn/ui** com customizações:
-
-- **Theme**: Sistema de cores baseado em CSS custom properties
-- **Dark Mode**: Suporte nativo ao modo escuro
-- **Responsive**: Mobile-first design
-- **Acessibilidade**: Componentes Radix UI como base
+- ✅ Modo escuro nativo
+- ✅ Design responsivo
+- ✅ Componentes acessíveis
+- ✅ Gravação de áudio
+- ✅ Respostas em tempo real
